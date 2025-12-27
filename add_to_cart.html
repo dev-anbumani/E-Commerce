@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cart &amp; Checkout - Secure</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                        "text-main": "#111418",
+                        "text-secondary": "#617289",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-text-main antialiased selection:bg-primary/20 selection:text-primary">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between border-b border-[#f0f2f4] bg-white/80 backdrop-blur-md px-6 py-4 lg:px-12">
+            <div class="flex items-center gap-3">
+                <div
+                    class="flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-amber-300 via-yellow-500 to-amber-600 text-white shadow-[0_2px_10px_-3px_rgba(217,119,6,0.3)]">
+                    <span class="material-symbols-outlined text-[22px] drop-shadow-sm">grid_view</span>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-xl font-bold tracking-tight text-text-main leading-tight">Surya Infotech</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div
+                    class="hidden md:flex items-center gap-1.5 text-xs font-medium text-text-secondary bg-[#f0f2f4] px-3 py-1.5 rounded-full">
+                    <span class="material-symbols-outlined text-[16px]">lock</span>
+                    <span>SSL Secured</span>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 py-10 px-4 md:px-8 lg:px-12 max-w-[1400px] mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-8 flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between text-sm font-medium">
+                            <span class="text-primary font-bold">Cart Review</span>
+                            <span class="text-text-secondary">Shipping</span>
+                            <span class="text-text-secondary">Payment</span>
+                        </div>
+                        <div class="relative h-2 w-full rounded-full bg-[#dbe0e6]">
+                            <div
+                                class="absolute top-0 left-0 h-full w-1/3 rounded-full bg-primary shadow-[0_0_10px_rgba(19,109,236,0.5)]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-text-main">Your
+                            Cart</h2>
+                        <p class="text-text-secondary text-lg">Free shipping on all orders over $500.</p>
+                    </div>
+                    <div
+                        class="flex flex-col gap-0 rounded-2xl bg-white shadow-sm border border-slate-100 overflow-hidden">
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 p-6 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+                            <div class="shrink-0">
+                                <div class="bg-center bg-no-repeat bg-cover rounded-xl size-24 md:size-32 bg-slate-100 relative group"
+                                    data-alt="MacBook Pro 14-inch Space Gray"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIY1h8oezm7f0z2KpOudhfl9NF_CIxEZHZQnKN8tjR-XVCFJ7QHDyzdx7Zo_szKy3Qz4fDIezQgpDrPW4xzacBSWJRMbWx00PgILUDv1A-duvkYN64JD4HGtOc9toNsQ7-XVRKe0KY9YMbfW1B0tZT-SJoDCoVoVLcmIvvRcHHBeweivvUOS7gaCVYGwlgcdk1kYfoB6D45eTGf9jJSPy49a18TNzbqKgizbnSo5MxRnIYaHqnuDitfikddskkx89R8PBQ9IB6WlA");'>
+                                    <div
+                                        class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="flex justify-between items-start gap-4">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-text-main mb-1">MacBook Pro 14-inch</h3>
+                                        <p class="text-text-secondary text-sm mb-1">Space Gray, 16GB RAM, 1TB SSD</p>
+                                        <p
+                                            class="text-green-600 text-xs font-medium bg-green-50 inline-block px-2 py-0.5 rounded">
+                                            In Stock</p>
+                                    </div>
+                                    <p class="text-lg font-bold text-text-main">$1,999.00</p>
+                                </div>
+                                <div class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="text-sm font-medium text-red-500 hover:text-red-700 hover:underline">Remove</button>
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class="flex size-8 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-text-main transition-colors">
+                                            <span class="material-symbols-outlined text-[16px]">remove</span>
+                                        </button>
+                                        <input
+                                            class="w-8 p-0 text-center bg-transparent border-none font-medium text-text-main focus:ring-0"
+                                            readonly="" type="text" value="1" />
+                                        <button
+                                            class="flex size-8 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-text-main transition-colors">
+                                            <span class="material-symbols-outlined text-[16px]">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 p-6 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+                            <div class="shrink-0">
+                                <div class="bg-center bg-no-repeat bg-cover rounded-xl size-24 md:size-32 bg-slate-100 relative group"
+                                    data-alt="USB-C Multiport Adapter Silver"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_GfBvnSd2FUlU0Bs-wUuPzJzAC_FnWhV8u0uT_sTMl7em6JRox-T-GdWl5SHn8q2hhKZP7mweV1IYe0yUroIPkq06x79GZzvE2LCe0d9d8Y9k1fSTJtpF4CRaXKuQUWgxJfZpBmzt6OO_btuRNFKa7t-RCkHCsi4nrXH7jbxq5pSLkTjWtOMN_36PY6MxBMEwAyUTCkwopUnmdhFWyauNZKoh4_38pzcoN_Aj87aHSpnRNlFW-49W_gCSyVJGamFYw0XsQlVfjiY");'>
+                                    <div
+                                        class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 flex-col justify-between">
+                                <div class="flex justify-between items-start gap-4">
+                                    <div>
+                                        <h3 class="text-lg font-bold text-text-main mb-1">USB-C Multiport Adapter</h3>
+                                        <p class="text-text-secondary text-sm mb-1">4K HDMI, USB 3.0, SD Card Reader</p>
+                                        <p
+                                            class="text-green-600 text-xs font-medium bg-green-50 inline-block px-2 py-0.5 rounded">
+                                            In Stock</p>
+                                    </div>
+                                    <p class="text-lg font-bold text-text-main">$69.00</p>
+                                </div>
+                                <div class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="text-sm font-medium text-red-500 hover:text-red-700 hover:underline">Remove</button>
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class="flex size-8 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-text-main transition-colors">
+                                            <span class="material-symbols-outlined text-[16px]">remove</span>
+                                        </button>
+                                        <input
+                                            class="w-8 p-0 text-center bg-transparent border-none font-medium text-text-main focus:ring-0"
+                                            readonly="" type="text" value="1" />
+                                        <button
+                                            class="flex size-8 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-text-main transition-colors">
+                                            <span class="material-symbols-outlined text-[16px]">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div
+                            class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center gap-4">
+                            <span class="material-symbols-outlined text-text-secondary">card_giftcard</span>
+                            <div class="flex flex-col">
+                                <span class="font-medium text-text-main">Add Gift Message</span>
+                                <span class="text-xs text-text-secondary">Complimentary for this order</span>
+                            </div>
+                            <div class="ml-auto">
+                                <input class="rounded border-gray-300 text-primary focus:ring-primary/20 size-5"
+                                    type="checkbox" />
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center gap-4">
+                            <span class="material-symbols-outlined text-text-secondary">local_shipping</span>
+                            <div class="flex flex-col">
+                                <span class="font-medium text-text-main">Express Shipping</span>
+                                <span class="text-xs text-text-secondary">Get it by Tomorrow</span>
+                            </div>
+                            <div class="ml-auto">
+                                <input class="rounded border-gray-300 text-primary focus:ring-primary/20 size-5"
+                                    type="checkbox" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 relative">
+                    <div class="sticky top-28 flex flex-col gap-6">
+                        <div
+                            class="bg-white rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 p-6 flex flex-col gap-6">
+                            <h3 class="text-xl font-bold text-text-main">Order Summary</h3>
+                            <div class="flex flex-col gap-3 pb-6 border-b border-slate-100">
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-text-secondary">Subtotal</span>
+                                    <span class="font-medium text-text-main">$2,068.00</span>
+                                </div>
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-text-secondary">Shipping Estimate</span>
+                                    <span class="font-medium text-green-600">Free</span>
+                                </div>
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-text-secondary">Tax Estimate</span>
+                                    <span class="font-medium text-text-main">$175.78</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-base font-bold text-text-main">Total</span>
+                                <span class="text-2xl font-black text-text-main tracking-tight">$2,243.78</span>
+                            </div>
+                            <button
+                                class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-blue-500/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+                                <span>Proceed to Checkout</span>
+                                <span
+                                    class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </button>
+                            <div class="flex flex-col items-center gap-4 pt-2">
+                                <div class="flex items-center justify-center gap-2 text-text-secondary text-xs">
+                                    <span class="material-symbols-outlined text-[16px] text-green-600">lock</span>
+                                    <span>Guaranteed Safe &amp; Secure Checkout</span>
+                                </div>
+                                <div class="flex gap-3 opacity-60 grayscale hover:grayscale-0 transition-all">
+                                    <div aria-label="Visa"
+                                        class="h-6 w-10 rounded bg-slate-200 border border-slate-300 flex items-center justify-center">
+                                        <span class="text-[8px] font-black text-slate-600 uppercase italic">Visa</span>
+                                    </div>
+                                    <div aria-label="Mastercard"
+                                        class="h-6 w-10 rounded bg-slate-200 border border-slate-300 flex items-center justify-center">
+                                        <div class="flex -space-x-1">
+                                            <div class="size-3 rounded-full bg-slate-400"></div>
+                                            <div class="size-3 rounded-full bg-slate-600"></div>
+                                        </div>
+                                    </div>
+                                    <div aria-label="Amex"
+                                        class="h-6 w-10 rounded bg-slate-200 border border-slate-300 flex items-center justify-center">
+                                        <span class="text-[8px] font-black text-slate-600 uppercase">Amex</span>
+                                    </div>
+                                    <div aria-label="PayPal"
+                                        class="h-6 w-10 rounded bg-slate-200 border border-slate-300 flex items-center justify-center">
+                                        <span class="text-[8px] font-bold text-slate-600 italic">Pay</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border border-dashed border-slate-300 p-4 text-center">
+                            <p class="text-sm text-text-secondary mb-2">Have a promo code?</p>
+                            <div class="flex gap-2">
+                                <input
+                                    class="flex-1 rounded-lg border-slate-200 bg-white text-sm focus:border-primary focus:ring-primary/20"
+                                    placeholder="Enter code" type="text" />
+                                <button
+                                    class="rounded-lg bg-slate-100 hover:bg-slate-200 px-4 py-2 text-sm font-semibold text-text-main transition-colors">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-auto border-t border-[#f0f2f4] bg-white py-12">
+            <div
+                class="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-sm text-text-secondary">
+                    © 2023 Surya Infotech Inc. All rights reserved.
+                </div>
+                <div class="flex gap-6 text-sm font-medium text-text-secondary">
+                    <a class="hover:text-primary" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary" href="#">Terms of Service</a>
+                    <a class="hover:text-primary" href="#">Returns</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

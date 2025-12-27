@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Register - Surya Infotech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for better aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+
+        /* Subtle gold accent for the logo if needed via css text-gradient */
+        .text-gold {
+            color: #d4af37;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white antialiased overflow-x-hidden">
+    <div class="flex flex-col min-h-screen">
+        <!-- Top Navigation -->
+        <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e5e7eb] dark:border-[#2a3441] px-10 py-4 bg-white dark:bg-[#101822] sticky top-0 z-50">
+            <div class="flex items-center gap-3 cursor-pointer">
+                <!-- Logo Icon -->
+                <div class="size-10 bg-primary/10 rounded-lg flex items-center justify-center text-gold">
+                    <span class="material-symbols-outlined" style="font-size: 28px;">laptop_mac</span>
+                </div>
+                <h2 class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                    Surya <span class="text-gold">Infotech</span>
+                </h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                <nav class="flex items-center gap-9">
+                    <a class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Home</a>
+                    <a class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Shop</a>
+                    <a class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">About Us</a>
+                </nav>
+                <div class="flex gap-3">
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-transparent border border-[#dbe0e6] dark:border-[#3e4a5b] text-[#111418] dark:text-white text-sm font-bold hover:bg-gray-50 dark:hover:bg-[#1e2a3b] transition-colors">
+                        <span class="truncate">Log In</span>
+                    </button>
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-md hover:bg-blue-600 transition-colors">
+                        <span class="truncate">Sign Up</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden text-[#111418] dark:text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </header>
+        <!-- Main Content Area -->
+        <main class="flex flex-1 w-full justify-center">
+            <div class="flex w-full max-w-[1440px] flex-col lg:flex-row min-h-[calc(100vh-80px)]">
+                <!-- Left Side: Hero / Image -->
+                <div
+                    class="relative hidden lg:flex flex-1 flex-col justify-between p-10 bg-[#f8f9fb] dark:bg-[#1a2330] overflow-hidden">
+                    <div class="z-10 relative max-w-[500px]">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-[#2a3441] border border-[#e5e7eb] dark:border-[#3e4a5b] mb-6 shadow-sm">
+                            <span class="size-2 rounded-full bg-green-500 animate-pulse"></span>
+                            <span
+                                class="text-xs font-bold text-gray-600 dark:text-gray-300 uppercase tracking-wide">Premium
+                                Members Only</span>
+                        </div>
+                        <h1
+                            class="text-4xl xl:text-5xl font-extrabold text-[#111418] dark:text-white leading-[1.2] mb-4">
+                            Join the elite tech <br /> community.
+                        </h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-400">
+                            Unlock exclusive access to premium laptops, priority support, and early-bird deals on the
+                            latest tech accessories.
+                        </p>
+                    </div>
+                    <!-- Decorative Image -->
+                    <div
+                        class="absolute right-[-10%] bottom-[-10%] w-[80%] h-[70%] z-0 opacity-100 pointer-events-none">
+                        <!-- Abstract Laptop representation -->
+                        <div class="w-full h-full bg-contain bg-no-repeat bg-bottom transition-transform duration-700 hover:scale-105"
+                            data-alt="Sleek silver laptop on a clean desk"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjNl8pkpFuDURHzKDaRnZsVVuj5oAUggqIJ-fBvkY3l3CjurUMMO9LUJ2XrOiNHNRPuxLavj9ETTuXHebi7QnVGEkvWXc0QqRGhuNALhl9qXoRvQ7xzrzEqsH5dnfGaw7TmHhLIoJ7f-_HrMGIrDoYBn-RiEzj4rrYopAolUYfW4M73pMZd76Uz6ZWpE0acq3DPnptKmjqk7NuL5j_uFeYgXOeeijTVKsLZefWALchvtsCVOv41G2aQGLhlxg2p-Dd-nkrGxXqFEA');">
+                        </div>
+                    </div>
+                    <!-- Floating Card -->
+                    <div
+                        class="absolute bottom-10 left-10 z-10 bg-white/90 dark:bg-[#1e2a3b]/90 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-lg flex items-center gap-4 max-w-[300px]">
+                        <div class="bg-primary/10 p-2 rounded-lg text-primary">
+                            <span class="material-symbols-outlined">verified_user</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-[#111418] dark:text-white">Trust &amp; Security</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">Bank-level encryption for your data.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Registration Form -->
+                <div
+                    class="flex flex-1 flex-col justify-center items-center p-6 sm:p-12 lg:p-20 bg-white dark:bg-[#101822]">
+                    <div class="w-full max-w-[480px] flex flex-col gap-6">
+                        <div class="flex flex-col gap-2 mb-2">
+                            <h1 class="text-[#111418] dark:text-white text-3xl font-bold leading-tight tracking-tight">
+                                Create your account</h1>
+                            <p class="text-gray-500 dark:text-gray-400 text-base">Start your premium journey with Surya
+                                Infotech.</p>
+                        </div>
+                        <!-- Social Sign up -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e5e7eb] dark:border-[#3e4a5b] hover:bg-gray-50 dark:hover:bg-[#1e2a3b] transition-all text-sm font-bold text-[#111418] dark:text-white">
+                                <svg class="w-5 h-5" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.766 12.2764C23.766 11.4607 23.6999 10.6406 23.5588 9.83807H12.24V14.4591H18.7217C18.4528 15.9494 17.5885 17.2678 16.323 18.1056V21.1039H20.19C22.4608 19.0139 23.766 15.9274 23.766 12.2764Z"
+                                        fill="#4285F4"></path>
+                                    <path
+                                        d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3275 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008Z"
+                                        fill="#34A853"></path>
+                                    <path
+                                        d="M5.50253 14.3003C5.00236 12.8099 5.00236 11.1961 5.50253 9.70575V6.61481H1.51649C-0.18551 10.0056 -0.18551 14.0004 1.51649 17.3912L5.50253 14.3003Z"
+                                        fill="#FBBC05"></path>
+                                    <path
+                                        d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.0344664 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45064 6.86173 9.10947 4.74966 12.2401 4.74966Z"
+                                        fill="#EA4335"></path>
+                                </svg>
+                                Google
+                            </button>
+                            <button
+                                class="flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e5e7eb] dark:border-[#3e4a5b] hover:bg-gray-50 dark:hover:bg-[#1e2a3b] transition-all text-sm font-bold text-[#111418] dark:text-white">
+                                <span class="material-symbols-outlined text-[20px]">ios</span>
+                                Apple
+                            </button>
+                        </div>
+                        <div class="relative flex py-2 items-center">
+                            <div class="flex-grow border-t border-[#e5e7eb] dark:border-[#3e4a5b]"></div>
+                            <span class="flex-shrink-0 mx-4 text-gray-400 text-xs font-medium uppercase">Or continue
+                                with email</span>
+                            <div class="flex-grow border-t border-[#e5e7eb] dark:border-[#3e4a5b]"></div>
+                        </div>
+                        <!-- Manual Form -->
+                        <form class="flex flex-col gap-4">
+                            <!-- Name Fields Row -->
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <label class="flex flex-col flex-1">
+                                    <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal pb-2">
+                                        First Name</p>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-[#3e4a5b] bg-background-light dark:bg-[#1a2330] focus:border-primary h-12 placeholder:text-[#9ca3af] px-4 text-sm font-normal leading-normal transition-all"
+                                        placeholder="John" type="text" />
+                                </label>
+                                <label class="flex flex-col flex-1">
+                                    <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal pb-2">
+                                        Last Name</p>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-[#3e4a5b] bg-background-light dark:bg-[#1a2330] focus:border-primary h-12 placeholder:text-[#9ca3af] px-4 text-sm font-normal leading-normal transition-all"
+                                        placeholder="Doe" type="text" />
+                                </label>
+                            </div>
+                            <!-- Email -->
+                            <label class="flex flex-col w-full">
+                                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal pb-2">Email
+                                    Address</p>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-[#3e4a5b] bg-background-light dark:bg-[#1a2330] focus:border-primary h-12 placeholder:text-[#9ca3af] px-4 text-sm font-normal leading-normal transition-all"
+                                    placeholder="name@example.com" type="email" />
+                            </label>
+                            <!-- Password -->
+                            <label class="flex flex-col w-full relative">
+                                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal pb-2">
+                                    Password</p>
+                                <div class="flex w-full items-stretch rounded-lg relative">
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-[#3e4a5b] bg-background-light dark:bg-[#1a2330] focus:border-primary h-12 placeholder:text-[#9ca3af] px-4 pr-12 text-sm font-normal leading-normal transition-all"
+                                        placeholder="At least 8 characters" type="password" />
+                                    <div
+                                        class="absolute right-0 top-0 h-full flex items-center pr-3 cursor-pointer text-gray-500 hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[20px]">visibility_off</span>
+                                    </div>
+                                </div>
+                                <!-- Password Strength Indicator -->
+                                <div class="flex gap-1 mt-2 h-1 w-full">
+                                    <div class="h-full w-1/4 rounded-full bg-red-400"></div>
+                                    <div class="h-full w-1/4 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+                                    <div class="h-full w-1/4 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+                                    <div class="h-full w-1/4 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Weak password</p>
+                            </label>
+                            <!-- Confirm Password -->
+                            <label class="flex flex-col w-full relative">
+                                <p class="text-[#111418] dark:text-white text-sm font-medium leading-normal pb-2">
+                                    Confirm Password</p>
+                                <div class="flex w-full items-stretch rounded-lg relative">
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-[#3e4a5b] bg-background-light dark:bg-[#1a2330] focus:border-primary h-12 placeholder:text-[#9ca3af] px-4 pr-12 text-sm font-normal leading-normal transition-all"
+                                        placeholder="Re-enter your password" type="password" />
+                                </div>
+                            </label>
+                            <!-- Terms Checkbox -->
+                            <div class="flex items-start gap-3 mt-2">
+                                <input class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary mt-1"
+                                    id="terms" type="checkbox" />
+                                <label class="text-sm text-gray-600 dark:text-gray-400 leading-normal" for="terms">
+                                    I agree to the <a class="text-primary hover:underline font-medium" href="#">Terms of
+                                        Service</a> and <a class="text-primary hover:underline font-medium"
+                                        href="#">Privacy Policy</a>.
+                                </label>
+                            </div>
+                            <button
+                                class="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold shadow-lg shadow-blue-500/30 hover:bg-blue-600 transition-all active:scale-[0.98]"
+                                type="button">
+                                <span class="truncate">Create Account</span>
+                            </button>
+                        </form>
+                        <p class="text-center text-sm text-[#111418] dark:text-gray-300 mt-2">
+                            Already have an account?
+                            <a class="font-bold text-primary hover:underline ml-1" href="#">Log in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Minimal Footer for Legal/Copyright -->
+        <footer class="bg-white dark:bg-[#101822] py-6 border-t border-[#e5e7eb] dark:border-[#2a3441]">
+            <div
+                class="container mx-auto px-10 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>© 2024 Surya Infotech. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms</a>
+                    <a class="hover:text-primary transition-colors" href="#">Support</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

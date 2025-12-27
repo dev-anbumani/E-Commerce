@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Surya Infotech - Premium Laptops &amp; Accessories</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "primary-dark": "#0d5bc6",
+                        "background-light": "#f8faff",
+                        "background-dark": "#0f172a",
+                        "gold": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px -5px rgba(19, 109, 236, 0.3)',
+                        'card': '0 10px 30px -10px rgba(0, 0, 0, 0.05)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .reveal-delay-100 {
+            animation-delay: 100ms;
+        }
+
+        .reveal-delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .reveal-delay-300 {
+            animation-delay: 300ms;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden selection:bg-primary selection:text-white">
+    <div class="flex flex-col min-h-screen">
+        <header
+            class="sticky top-0 z-50 transition-all duration-300 glass-panel border-b border-gray-100/50 dark:border-gray-800/50">
+            <div class="bg-primary text-white text-xs font-medium text-center py-1.5 hidden sm:block">
+                Limited Time: Get <span class="font-bold">₹500 OFF</span> your first refurbished order with code <span
+                    class="font-bold bg-white/20 px-1 rounded">SURYA500</span>
+            </div>
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+                    <a class="flex items-center gap-3 group" href="#">
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-xl shadow-lg shadow-yellow-500/20 group-hover:shadow-yellow-500/40 transition-shadow">
+                            <span class="material-symbols-outlined text-white text-2xl font-bold">diamond</span>
+                            <div
+                                class="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2
+                                class="text-slate-900 dark:text-white text-lg sm:text-xl font-bold tracking-tight leading-none">
+                                Surya Infotech</h2>
+                            <span
+                                class="text-[10px] sm:text-[11px] text-gray-500 font-semibold tracking-widest uppercase mt-0.5">Premium
+                                Tech Store</span>
+                        </div>
+                    </a>
+                    <div class="hidden lg:flex flex-1 max-w-lg mx-8 transition-all duration-300 focus-within:max-w-xl">
+                        <label class="relative w-full group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <span
+                                    class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">search</span>
+                            </div>
+                            <input
+                                class="block w-full pl-11 pr-4 py-2.5 border border-transparent rounded-full bg-gray-100/80 dark:bg-gray-800/80 text-sm focus:bg-white dark:focus:bg-gray-900 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder-gray-500 dark:text-white"
+                                placeholder="Search MacBook Pro, Dell XPS, or Accessories..." type="text" />
+                            <div class="absolute inset-y-0 right-3 flex items-center">
+                                <kbd
+                                    class="hidden xl:inline-block px-2 py-0.5 text-[10px] font-bold text-gray-400 bg-gray-200 dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600">⌘K</kbd>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex items-center gap-3 sm:gap-6">
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="category.html">
+                                Shop
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="sell_old.html">
+                                Sell
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="refurbished.html">
+                                Refurbished
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                        </nav>
+                        <div class="h-6 w-px bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
+                        <div class="flex items-center gap-3">
+                            <a href="login.html">
+                                <button
+                                class="hidden sm:flex h-10 px-6 items-center justify-center rounded-full bg-slate-900 dark:bg-white dark:text-slate-900 text-white text-sm font-bold hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-slate-900/20 dark:shadow-white/10">
+                                Log In
+                            </button>
+                            </a>
+                            
+                            <button
+                                class="relative p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-slate-700 dark:text-slate-200 group">
+                                <span
+                                    class="material-symbols-outlined filled-icon group-hover:text-primary transition-colors">shopping_bag</span>
+                                <span
+                                    class="absolute top-1 right-0.5 w-4 h-4 bg-primary text-white text-[10px] font-bold flex items-center justify-center rounded-full ring-2 ring-white dark:ring-background-dark">2</span>
+                            </button>
+                            <button
+                                class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-slate-700 dark:text-slate-200 md:hidden">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <section class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden -z-10 pointer-events-none">
+                    <div
+                        class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-400/20 dark:bg-blue-600/10 rounded-full blur-[120px]">
+                    </div>
+                    <div
+                        class="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] bg-purple-400/20 dark:bg-purple-600/10 rounded-full blur-[120px]">
+                    </div>
+                    <div
+                        class="absolute top-[20%] right-[20%] w-[30%] h-[30%] bg-yellow-400/10 dark:bg-yellow-600/5 rounded-full blur-[100px]">
+                    </div>
+                </div>
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                        <div class="flex-1 text-center lg:text-left space-y-8 z-10 max-w-2xl lg:max-w-none mx-auto">
+                            <div class="space-y-6">
+                                <div
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 dark:bg-white/5 border border-gray-200 dark:border-gray-700 backdrop-blur-sm shadow-sm animate-fade-up">
+                                    <span class="relative flex h-2 w-2">
+                                        <span
+                                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                    </span>
+                                    <span
+                                        class="text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200">New
+                                        Arrivals: M3 Chips Stocked</span>
+                                </div>
+                                <h1
+                                    class="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] tracking-tight animate-fade-up reveal-delay-100">
+                                    Power.<br />
+                                    Performance.<br />
+                                    <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Perfection.</span>
+                                </h1>
+                                <p
+                                    class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light animate-fade-up reveal-delay-200">
+                                    Upgrade your workflow with the latest Ultrabooks or find incredible value in our
+                                    certified refurbished collection. Grade-A quality, backed by a 1-year warranty.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 animate-fade-up reveal-delay-300">
+                                <button
+                                    class="h-14 px-8 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-base font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
+                                    Shop Latest Models
+                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                </button>
+                                <button
+                                    class="h-14 px-8 rounded-full bg-white dark:bg-gray-800 text-slate-900 dark:text-white border border-gray-200 dark:border-gray-700 text-base font-bold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all flex items-center justify-center gap-2">
+                                    Get a Trade-in Quote
+                                </button>
+                            </div>
+                            <div class="animate-fade-up reveal-delay-300">
+                                <div
+                                    class="flex items-center justify-center lg:justify-start gap-2 text-sm font-medium text-slate-500 dark:text-slate-400">
+                                    <div class="flex -space-x-2">
+                                        <div
+                                            class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-200 flex items-center justify-center overflow-hidden">
+                                            <img alt="User"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVKTksv2r3THcj4eWZtvKLNkq3mT4d1gDrfeSRqJbJDhSuHgOg7UmdshI0nIltgfmylYDhYbOUlPspoE4LxR7qAGFDW-vGSMYjAu6q0qmecwZKH91X5HZpcRGy27WE1dY26KIIyPvCKXDRHqx9jwV4LafM65ASFItuNy_e6uc80Z9pJcyTaqRIFTbAKQGDUKr-Feuys8EAitnDh6oyH2BwbNEJC0xDFqs8VSiDqv5rqOVhovgezjQIpjt-b4xDmWPhyp8FR2jIEzo" />
+                                        </div>
+                                        <div
+                                            class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-200 flex items-center justify-center overflow-hidden">
+                                            <img alt="User"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5vGudrvwMEZ_rLvs-Picfu0v64PjQwXQbA70w3wy76_giWtBCKtjGJb4mrQsB6jZwvNR2cDBgMSp4nRUfuFn4TgM2vVFjYwL_YGbuep63gzIXKAkSvJe-JiGDQQ8Bz7ogwn7DsYc9sGc173oSwCrcnWrVhTedtiSp4gNa9iE5x9xnTKFZeUxK95V56xUme_kiUz4WAINGYPbdlSnLbSgzrHYi4kYY_TiFriSHq2fK8Z50K-WJU_2P_77gT9kMBt_s3ROm_6iWJx0" />
+                                        </div>
+                                        <div
+                                            class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-200 flex items-center justify-center overflow-hidden">
+                                            <img alt="User"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuALnZXG3myKgcmvMWsa2ON9r0Wt0TjeIfLqtBynw6BGaMeuw1lzIQjxYppCx1H0VG8NZdUKhrDOapUAr-4IDnw38eqX7TaxmuNWGu1fugavZq0iSr8owjf9sRT0_cwZhDRbIk0zjC_Tuk0-PsbtLQg5TuK_G-zhJRsaS_QefZ4znn6ZRJRiHGaI4hdy69-sW7eaGFjGit7QCaB4B9FkfHK-VXo0ROFLpZh-eWaGWN0rCFDg6JUAv05Quo7z3iyLsmvAIGPb69hkX3E" />
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col ml-2">
+                                        <div class="flex text-yellow-400 text-xs">
+                                            <span class="material-symbols-outlined text-[14px] fill-current">star</span>
+                                            <span class="material-symbols-outlined text-[14px] fill-current">star</span>
+                                            <span class="material-symbols-outlined text-[14px] fill-current">star</span>
+                                            <span class="material-symbols-outlined text-[14px] fill-current">star</span>
+                                            <span class="material-symbols-outlined text-[14px] fill-current">star</span>
+                                        </div>
+                                        <span class="text-xs">Trusted by 10,000+ Customers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 w-full relative animate-fade-up reveal-delay-200">
+                            <div class="relative w-full aspect-[4/3] lg:aspect-square flex items-center justify-center">
+                                <div class="w-[110%] h-[110%] bg-center bg-contain bg-no-repeat drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700 ease-out animate-float"
+                                    data-alt="Sleek silver premium laptop floating against a minimal background"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFfcwqrftHnRCwXHRCY2KMLmA4Qmj4gCBpIzDrDL8790ms-yHM1qax7DBgDIBixK-rwYZ5qZbfs6hWN7jHPiEpXDGJp0q4Utr5LVcIJcDXeZhWuz-gZWOkJjTtlNzQIJatgQIm5RIcPyCLNjNphYJreXrC3lwa4bnWMJpIN4_wj33dkOeT7hDswn3OW5WnozwSgloOFeOwppmiq9lsk5ZFWzZIBrSKcL2_PW4cjeCk84LHmR30pUu5wN_j857BxHNE35tpHJxBLqE');">
+                                </div>
+                                <div class="absolute top-[20%] right-[10%] bg-white/80 dark:bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/20 animate-float"
+                                    style="animation-delay: 1s;">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                            <span class="material-symbols-outlined">eco</span>
+                                        </div>
+                                        <div>
+                                            <div class="text-[10px] text-gray-500 uppercase font-bold">Sustainability
+                                            </div>
+                                            <div class="text-sm font-bold text-slate-900 dark:text-white">Eco-Friendly
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-[20%] left-[5%] bg-white/80 dark:bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/20 animate-float"
+                                    style="animation-delay: 2s;">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary">
+                                            <span class="material-symbols-outlined">verified</span>
+                                        </div>
+                                        <div>
+                                            <div class="text-[10px] text-gray-500 uppercase font-bold">Guarantee</div>
+                                            <div class="text-sm font-bold text-slate-900 dark:text-white">1-Year
+                                                Warranty</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="border-y border-gray-100 dark:border-gray-800 bg-white dark:bg-background-dark py-8">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                        <span class="text-xl font-black text-slate-400 dark:text-slate-600 tracking-wider">DELL</span>
+                        <span class="text-xl font-black text-slate-400 dark:text-slate-600 tracking-wider">HP</span>
+                        <span class="text-xl font-black text-slate-400 dark:text-slate-600 tracking-wider">LENOVO</span>
+                        <span class="text-xl font-black text-slate-400 dark:text-slate-600 tracking-wider">APPLE</span>
+                        <span class="text-xl font-black text-slate-400 dark:text-slate-600 tracking-wider">ASUS</span>
+                        <span class="hidden md:inline-block w-px h-8 bg-gray-200 dark:bg-gray-700"></span>
+                        <div class="flex items-center gap-2">
+                            <span class="font-bold text-slate-900 dark:text-white">Google Reviews</span>
+                            <div class="flex text-yellow-400">
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star_half</span>
+                            </div>
+                            <span class="font-bold text-slate-900 dark:text-white">4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-background-light dark:bg-background-dark">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-16">
+                        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">The Surya Infotech Promise
+                        </h2>
+                        <p class="text-slate-500 dark:text-slate-400">We don't just sell laptops; we deliver peace of
+                            mind. Here is why thousands trust us for their tech needs.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div
+                            class="bg-white dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-2xl">construction</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">72-Point Quality Check
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Every refurbished
+                                device undergoes rigorous hardware and software testing by certified technicians.</p>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-green-50 dark:bg-green-900/20 text-green-600 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-2xl">recycling</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Eco-Conscious Choice</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">By choosing
+                                refurbished, you reduce e-waste and carbon footprint. Tech that feels good.</p>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 text-yellow-600 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-2xl">price_check</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">Best Resale Value</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">We offer the most
+                                competitive prices for your old devices with instant quotes and fast payment.</p>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-900/20 text-purple-600 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-2xl">security</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">1-Year Warranty</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Shop with confidence.
+                                All our premium laptops come with comprehensive warranty coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-10 bg-white dark:bg-background-dark">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                        <a class="group relative overflow-hidden rounded-3xl bg-gray-50 dark:bg-gray-800/50 p-8 flex flex-col justify-between h-[360px] hover:shadow-2xl transition-all border border-transparent hover:border-gray-100 dark:hover:border-gray-700"
+                            href="#">
+                            <div class="relative z-10">
+                                <span
+                                    class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-bold mb-3">Brand
+                                    New</span>
+                                <h3
+                                    class="text-3xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                    Buy Latest</h3>
+                                <p class="text-slate-500 dark:text-slate-400">Unboxed, sealed units with full
+                                    manufacturer warranty.</p>
+                            </div>
+                            <div
+                                class="absolute right-[-20px] bottom-[-20px] w-64 h-64 bg-blue-200/30 dark:bg-blue-600/10 rounded-full blur-3xl group-hover:bg-blue-300/40 transition-colors">
+                            </div>
+                            <div class="relative w-full h-48 bg-center bg-contain bg-no-repeat self-center transform group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500"
+                                data-alt="Stack of new laptop boxes"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEvdOpJAp6kHBaIXNfV7SBL4uGgDRXuhMrm0eSFyZsRN8y_VLeZ4j7zXZBbhDWvaf6CUcFdLFXORM_Iq5raK6QpWDoY1nIV9o6gxLXjpZJNn_njFXn5UvoJDMn_140dX_geXT_gzNC-Vt7qN0fI-PmMf0EdbzbTXJcbe2Eby3uausuvaI_S0Rw0GjidymHlNle29Mh5zUcX1MzDXG-RK7-7_qDUuF8eOldC3DGD4VVzBlA-A9CdO83UWhbbBRFYIizi4afNkBt8DI');">
+                            </div>
+                            <div class="mt-4 flex items-center text-slate-900 dark:text-white font-bold text-sm">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-white dark:bg-gray-700 flex items-center justify-center mr-2 group-hover:bg-primary group-hover:text-white transition-colors"><span
+                                        class="material-symbols-outlined text-sm">arrow_forward</span></span>
+                                Explore Collection
+                            </div>
+                        </a>
+                        <a class="group relative overflow-hidden rounded-3xl bg-gray-50 dark:bg-gray-800/50 p-8 flex flex-col justify-between h-[360px] hover:shadow-2xl transition-all border border-transparent hover:border-gray-100 dark:hover:border-gray-700"
+                            href="#">
+                            <div class="relative z-10">
+                                <span
+                                    class="inline-block px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-bold mb-3">Instant
+                                    Cash</span>
+                                <h3
+                                    class="text-3xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-green-600 transition-colors">
+                                    Sell Device</h3>
+                                <p class="text-slate-500 dark:text-slate-400">Get the best market price for your old
+                                    laptop instantly.</p>
+                            </div>
+                            <div
+                                class="absolute right-[-20px] bottom-[-20px] w-64 h-64 bg-green-200/30 dark:bg-green-600/10 rounded-full blur-3xl group-hover:bg-green-300/40 transition-colors">
+                            </div>
+                            <div class="relative w-full h-48 bg-center bg-contain bg-no-repeat self-center transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500"
+                                data-alt="Hand holding cash or exchange icon"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDLg96VnDNj0uU4CtBctTp99BU-OqVwBviiD2ZAAJpmyK6n83io8qXsINV_P_ndXxxIp_pGapEG4o7Ml4aMM17DubsXow0bsJpr9liGwE9L-2mql8AFNJEmZQ4INLt3UurlS_AP0rN-2JpzpJoKtzgZ1USfkXc7b1_GSBFYQEAyDCWoX2CTcoZiiqVAUfVxYOb4lXTt3jj-SbJiKqMtNb4ytutAdb4FSJawzI5fLaceIZEoJlhspJyBdH_a1EYztODhXJ3-HECleXQ');">
+                            </div>
+                            <div class="mt-4 flex items-center text-slate-900 dark:text-white font-bold text-sm">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-white dark:bg-gray-700 flex items-center justify-center mr-2 group-hover:bg-green-600 group-hover:text-white transition-colors"><span
+                                        class="material-symbols-outlined text-sm">currency_rupee</span></span>
+                                Get Quote Now
+                            </div>
+                        </a>
+                        <a class="group relative overflow-hidden rounded-3xl bg-gray-50 dark:bg-gray-800/50 p-8 flex flex-col justify-between h-[360px] hover:shadow-2xl transition-all border border-transparent hover:border-gray-100 dark:hover:border-gray-700"
+                            href="#">
+                            <div class="relative z-10">
+                                <span
+                                    class="inline-block px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-xs font-bold mb-3">Save
+                                    up to 60%</span>
+                                <h3
+                                    class="text-3xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-orange-500 transition-colors">
+                                    Refurbished</h3>
+                                <p class="text-slate-500 dark:text-slate-400">Certified "Like New" devices at unbeatable
+                                    prices.</p>
+                            </div>
+                            <div
+                                class="absolute right-[-20px] bottom-[-20px] w-64 h-64 bg-orange-200/30 dark:bg-orange-600/10 rounded-full blur-3xl group-hover:bg-orange-300/40 transition-colors">
+                            </div>
+                            <div class="relative w-full h-48 bg-center bg-contain bg-no-repeat self-center transform group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500"
+                                data-alt="Certified refurbished laptop with badge"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Mua8yQ02BzddqNQvQzm0cDr-a0JfrLOyicZzPKiUHyqEu7vORGFzyH0m8Ghu8kMIytOCbTU4ZXTu5KJ7le1IlpPZuKkLByPNNR--Cy-v680SDXSm5c8KJM_FdLZWFTLOBU51KRqdkLsFuUlme5tuuD0gXEYUNExdQXf4aR7Yr-euu5CC3gRHQeWsvHsrkYJXgx_00gxVDhX3H3JbPiH0jBcRI5aZAA_b6BuLZFYvuMSmywUhpSbsL5TCDsB21nf8UQak5RgRTMg');">
+                            </div>
+                            <div class="mt-4 flex items-center text-slate-900 dark:text-white font-bold text-sm">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-white dark:bg-gray-700 flex items-center justify-center mr-2 group-hover:bg-orange-500 group-hover:text-white transition-colors"><span
+                                        class="material-symbols-outlined text-sm">arrow_forward</span></span>
+                                View Deals
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-background-dark dark:to-[#0b1118]">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-4">
+                        <div>
+                            <span class="text-primary font-bold uppercase tracking-wider text-sm">Easy Exchange</span>
+                            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-2">Sell Your Old Laptop in 3
+                                Steps</h2>
+                        </div>
+                        <button
+                            class="px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 text-slate-700 dark:text-slate-300 font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Start
+                            Selling</button>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-200 dark:bg-gray-700 -z-10">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                            <div class="flex flex-col items-center text-center group">
+                                <div
+                                    class="w-24 h-24 rounded-full bg-white dark:bg-gray-800 border-4 border-gray-100 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:border-primary transition-colors duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors">laptop_mac</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">1. Select Model</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs">Search for your laptop
+                                    model and answer a few questions about its condition.</p>
+                            </div>
+                            <div class="flex flex-col items-center text-center group">
+                                <div
+                                    class="w-24 h-24 rounded-full bg-white dark:bg-gray-800 border-4 border-gray-100 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:border-primary transition-colors duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors">payments</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">2. Get Instant Quote
+                                </h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs">Our AI-driven engine
+                                    generates the best market price instantly.</p>
+                            </div>
+                            <div class="flex flex-col items-center text-center group">
+                                <div
+                                    class="w-24 h-24 rounded-full bg-white dark:bg-gray-800 border-4 border-gray-100 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:border-primary transition-colors duration-300">
+                                    <span
+                                        class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary transition-colors">local_shipping</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">3. Free Pickup &amp;
+                                    Pay</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs">We pick it up from your
+                                    doorstep for free and transfer payment instantly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-white dark:bg-background-dark">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-10 text-center">Trending Now</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div
+                            class="group flex flex-col rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-2xl hover:border-blue-100 dark:hover:border-blue-900 transition-all bg-white dark:bg-[#151c29] relative overflow-hidden">
+                            <div class="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                                <span
+                                    class="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">SALE</span>
+                                <span
+                                    class="bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-[10px]">verified</span> NEW</span>
+                            </div>
+                            <div class="p-4 relative bg-gray-50 dark:bg-gray-800/50">
+                                <div class="aspect-[16/10] overflow-hidden rounded-lg relative">
+                                    <div class="w-full h-full bg-center bg-contain bg-no-repeat group-hover:scale-105 transition-transform duration-500"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCk-W1vMXodJZnbDlCgHFYN1_1q1QEnDLOgMybR-_hvpZ3E7JPoddLcgeKdktEakKjxKVdN_xXKhvAHPtCRelZWjqdWfrqrtmF9vzHz3THZoBUpZZM-QYwQebkJ08ja58TaK8s1NraPElXCNfb_nHyoCtqKSFew1OTQnwXLKtF-bUScH1-7japf2G2ROA1LDTquEhSHCM41LCwEJJ73vko0hPM5-6-zuaZX76lbVfqMWvW9KAdRjZSrdGF3yLGa4cEjYXgZuPF-FJQ');">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-black/10 dark:bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                                        <button
+                                            class="bg-white text-slate-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg hover:bg-primary hover:text-white transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300">Quick
+                                            View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-4 flex flex-col flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center text-yellow-400">
+                                        <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                                        <span
+                                            class="text-xs text-gray-500 ml-1 font-medium text-slate-600 dark:text-slate-400">4.8</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-1 text-[10px] text-gray-400 border border-gray-200 dark:border-gray-700 px-1.5 py-0.5 rounded">
+                                        <span class="material-symbols-outlined text-[12px]">security</span> 1 Year
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-bold text-lg text-slate-900 dark:text-white mb-1 leading-tight group-hover:text-primary transition-colors">
+                                    XPS 15 Infinity</h3>
+                                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Intel i7 • 16GB RAM • 512GB SSD •
+                                    NVIDIA RTX 3050</p>
+                                <div
+                                    class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-gray-400 line-through">$1,799</span>
+                                        <span class="text-xl font-black text-slate-900 dark:text-white">$1,499</span>
+                                    </div>
+                                    <button
+                                        class="w-10 h-10 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white flex items-center justify-center transition-colors shadow-lg shadow-slate-900/10">
+                                        <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-2xl hover:border-blue-100 dark:hover:border-blue-900 transition-all bg-white dark:bg-[#151c29] relative overflow-hidden">
+                            <div class="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                                <span
+                                    class="bg-gray-800 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">NEW</span>
+                            </div>
+                            <div class="p-4 relative bg-gray-50 dark:bg-gray-800/50">
+                                <div class="aspect-[16/10] overflow-hidden rounded-lg relative">
+                                    <div class="w-full h-full bg-center bg-contain bg-no-repeat group-hover:scale-105 transition-transform duration-500"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGQi080I7vN1x4a4Gh1II8Ph3ZtFuw2sjCbx2A9gICZXhdjrLKWtj4Ur-tCjuyxeCnekRUftH9LGTRjPKOr_SYl1I90GFA97T0q0SZ2Rzg4FG0_gBZOyxv8ShnVjXs_f3FsDz2xuhgJ7eUEWQDG2LNQhT5ESqi4K6xMT-r5dD5zjB2VCuY2W2iv19QzDl8yKoIvpPFbaJRrGJit0lOIZ1IDgt4emDDqWPjqXZvR24wmWmVoa1TaKOET3un5fd8lJFE4bMP67pjIOo');">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-black/10 dark:bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                                        <button
+                                            class="bg-white text-slate-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg hover:bg-primary hover:text-white transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300">Quick
+                                            View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-4 flex flex-col flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center text-yellow-400">
+                                        <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                                        <span
+                                            class="text-xs text-gray-500 ml-1 font-medium text-slate-600 dark:text-slate-400">4.9</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-1 text-[10px] text-gray-400 border border-gray-200 dark:border-gray-700 px-1.5 py-0.5 rounded">
+                                        <span class="material-symbols-outlined text-[12px]">security</span> 2 Year
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-bold text-lg text-slate-900 dark:text-white mb-1 leading-tight group-hover:text-primary transition-colors">
+                                    Blade Stealth 14</h3>
+                                <p class="text-xs text-slate-500 mb-4 line-clamp-2">AMD Ryzen 9 • 32GB RAM • 1TB SSD •
+                                    RTX 3080</p>
+                                <div
+                                    class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                                    <div class="flex flex-col">
+                                        <span class="text-xl font-black text-slate-900 dark:text-white">$2,299</span>
+                                    </div>
+                                    <button
+                                        class="w-10 h-10 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white flex items-center justify-center transition-colors shadow-lg shadow-slate-900/10">
+                                        <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-2xl hover:border-green-100 dark:hover:border-green-900 transition-all bg-white dark:bg-[#151c29] relative overflow-hidden">
+                            <div class="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                                <span
+                                    class="bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">REFURBISHED</span>
+                                <span
+                                    class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 text-[10px] font-bold px-2 py-1 rounded shadow-sm border border-gray-200 dark:border-gray-600">GRADE
+                                    A</span>
+                            </div>
+                            <div class="p-4 relative bg-gray-50 dark:bg-gray-800/50">
+                                <div class="aspect-[16/10] overflow-hidden rounded-lg relative">
+                                    <div class="w-full h-full bg-center bg-contain bg-no-repeat group-hover:scale-105 transition-transform duration-500"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBblwia4RwG_jvHX8VYEN0ap42hGpEB-zJfEE_LnXhdJqQoMzMh5kseiqpwUWi5RdF9GROAmot9UzqlnqXNysN68MG_EG5eG7NIVvBRXiyOGxfVJvTv5oHoeNTpHmPgKkM6WhIbAqUmGhg8whlESMAUCu7UPg38y7uIZhqlvAcsbZ6ebtKJq_KVStxtZYW3oWya2YP3FpLL2ZcRYVdWjMNZcYzDymuC3ds_J-15brF5MwhsHTLek-wykHVEvyHLhrQN0Q_CC5doM6E');">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-black/10 dark:bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                                        <button
+                                            class="bg-white text-slate-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg hover:bg-primary hover:text-white transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300">Quick
+                                            View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-4 flex flex-col flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center text-yellow-400">
+                                        <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                                        <span
+                                            class="text-xs text-gray-500 ml-1 font-medium text-slate-600 dark:text-slate-400">4.7</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-1 text-[10px] text-gray-400 border border-gray-200 dark:border-gray-700 px-1.5 py-0.5 rounded">
+                                        <span class="material-symbols-outlined text-[12px]">security</span> 6 Month
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-bold text-lg text-slate-900 dark:text-white mb-1 leading-tight group-hover:text-primary transition-colors">
+                                    MacBook Air M1</h3>
+                                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Apple M1 • 8GB RAM • 256GB SSD •
+                                    Gold</p>
+                                <div
+                                    class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-gray-400 line-through">$999</span>
+                                        <span class="text-xl font-black text-slate-900 dark:text-white">$749</span>
+                                    </div>
+                                    <button
+                                        class="w-10 h-10 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white flex items-center justify-center transition-colors shadow-lg shadow-slate-900/10">
+                                        <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-2xl hover:border-blue-100 dark:hover:border-blue-900 transition-all bg-white dark:bg-[#151c29] relative overflow-hidden">
+                            <div class="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                                <span
+                                    class="bg-purple-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">OLED</span>
+                            </div>
+                            <div class="p-4 relative bg-gray-50 dark:bg-gray-800/50">
+                                <div class="aspect-[16/10] overflow-hidden rounded-lg relative">
+                                    <div class="w-full h-full bg-center bg-contain bg-no-repeat group-hover:scale-105 transition-transform duration-500"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAd9ulmBEgheW48ja_OI2sAdT7TUWLSbns2Jr3uV-e0w8ionpUKpIBDXOI7EIg2WKrfk7nHkLLFUR2fIfF6vGSPyG8rARlwGl46_RqpqXZ3ZxCrh1_BTwtauTY6NgVEsn9T5RzvVECUQ83KOj4X0VrNc7LdJTIOW4yDbqglG1z8WaLrbQeRF6PXfki7QGvXM4u00wqvTPlCEbDXJTvU12MVm4T80GvsUnuwjzFwoxb5IF_0HPORxwlFFpomhmEPTwYIAldaRtg6nh0');">
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 bg-black/10 dark:bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                                        <button
+                                            class="bg-white text-slate-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg hover:bg-primary hover:text-white transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300">Quick
+                                            View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-4 flex flex-col flex-grow">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center text-yellow-400">
+                                        <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                                        <span
+                                            class="text-xs text-gray-500 ml-1 font-medium text-slate-600 dark:text-slate-400">4.5</span>
+                                    </div>
+                                    <div
+                                        class="flex items-center gap-1 text-[10px] text-gray-400 border border-gray-200 dark:border-gray-700 px-1.5 py-0.5 rounded">
+                                        <span class="material-symbols-outlined text-[12px]">security</span> 1 Year
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-bold text-lg text-slate-900 dark:text-white mb-1 leading-tight group-hover:text-primary transition-colors">
+                                    Yoga 9i Convertible</h3>
+                                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Intel i7 Evo • 16GB RAM • 1TB SSD •
+                                    4K Touch</p>
+                                <div
+                                    class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+                                    <div class="flex flex-col">
+                                        <span class="text-xl font-black text-slate-900 dark:text-white">$1,249</span>
+                                    </div>
+                                    <button
+                                        class="w-10 h-10 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white flex items-center justify-center transition-colors shadow-lg shadow-slate-900/10">
+                                        <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="py-20 bg-background-light dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
+                <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">What Our Customers Say</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-card relative">
+                            <span
+                                class="material-symbols-outlined absolute top-8 right-8 text-4xl text-gray-100 dark:text-gray-700">format_quote</span>
+                            <div class="flex text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6 relative z-10">"The refurbished MacBook
+                                Pro looked brand new! I saved over $500 and the customer service was exceptional. Highly
+                                recommend Surya Infotech."</p>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-100 text-primary font-bold flex items-center justify-center">
+                                    AS</div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white">Arjun S.</h4>
+                                    <span class="text-xs text-gray-500">Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-card relative">
+                            <span
+                                class="material-symbols-outlined absolute top-8 right-8 text-4xl text-gray-100 dark:text-gray-700">format_quote</span>
+                            <div class="flex text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6 relative z-10">"Selling my old Dell laptop
+                                was incredibly smooth. They picked it up the same day and I got the payment instantly.
+                                No hassle at all."</p>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-green-100 text-green-600 font-bold flex items-center justify-center">
+                                    MK</div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white">Meera K.</h4>
+                                    <span class="text-xs text-gray-500">Verified Seller</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-card relative">
+                            <span
+                                class="material-symbols-outlined absolute top-8 right-8 text-4xl text-gray-100 dark:text-gray-700">format_quote</span>
+                            <div class="flex text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star</span>
+                                <span class="material-symbols-outlined fill-current text-sm">star_half</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6 relative z-10">"Great selection of gaming
+                                laptops. The packaging was secure and premium. The laptop runs perfectly. Will buy
+                                accessories next."</p>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 font-bold flex items-center justify-center">
+                                    RJ</div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white">Rahul J.</h4>
+                                    <span class="text-xs text-gray-500">Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-white dark:bg-[#0b1118] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-lg shadow-sm">
+                                <span class="material-symbols-outlined text-white text-xl font-bold">diamond</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-lg font-bold tracking-tight">Surya Infotech
+                            </h2>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Your premium destination for high-end computing. Buy, sell, or trade up to the best
+                            technology on the market.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">call</span></a>
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">pin_drop</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-6">Shop</h3>
+                        <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="#">Laptops</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Desktops</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Monitors</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Components</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-6">Support</h3>
+                        <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="#">Order Status</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Warranty</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Trade-in Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl">
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">Join the Club</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get <span
+                                class="font-bold text-primary">₹500 OFF</span> your first order.</p>
+                        <form class="flex flex-col gap-3">
+                            <input
+                                class="w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm focus:ring-primary focus:border-primary p-2.5"
+                                placeholder="Enter your email" type="email" />
+                            <button
+                                class="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg px-4 py-2.5 text-sm font-bold hover:bg-primary dark:hover:bg-gray-200 transition-colors">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>© 2025 Surya Infotech. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Privacy Policy</a>
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

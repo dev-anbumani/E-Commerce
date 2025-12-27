@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Surya Infotech - Shop by Category</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "primary-dark": "#0b4eab",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#101822",
+                        "gold": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 10px 40px -10px rgba(19, 109, 236, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .icon-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] antialiased">
+    <div class="flex min-h-screen flex-col">
+        <!-- Navigation -->
+   <header
+            class="sticky top-0 z-50 transition-all duration-300 glass-panel border-b border-gray-100/50 dark:border-gray-800/50">
+            <div class="bg-primary text-white text-xs font-medium text-center py-1.5 hidden sm:block">
+                Limited Time: Get <span class="font-bold">₹500 OFF</span> your first refurbished order with code <span
+                    class="font-bold bg-white/20 px-1 rounded">SURYA500</span>
+            </div>
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+                    <a class="flex items-center gap-3 group" href="#">
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-xl shadow-lg shadow-yellow-500/20 group-hover:shadow-yellow-500/40 transition-shadow">
+                            <span class="material-symbols-outlined text-white text-2xl font-bold">diamond</span>
+                            <div
+                                class="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2
+                                class="text-slate-900 dark:text-white text-lg sm:text-xl font-bold tracking-tight leading-none">
+                                Surya Infotech</h2>
+                            <span
+                                class="text-[10px] sm:text-[11px] text-gray-500 font-semibold tracking-widest uppercase mt-0.5">Premium
+                                Tech Store</span>
+                        </div>
+                    </a>
+                    <div class="hidden lg:flex flex-1 max-w-lg mx-8 transition-all duration-300 focus-within:max-w-xl">
+                        <label class="relative w-full group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <span
+                                    class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">search</span>
+                            </div>
+                            <input
+                                class="block w-full pl-11 pr-4 py-2.5 border border-transparent rounded-full bg-gray-100/80 dark:bg-gray-800/80 text-sm focus:bg-white dark:focus:bg-gray-900 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder-gray-500 dark:text-white"
+                                placeholder="Search MacBook Pro, Dell XPS, or Accessories..." type="text" />
+                            <div class="absolute inset-y-0 right-3 flex items-center">
+                                <kbd
+                                    class="hidden xl:inline-block px-2 py-0.5 text-[10px] font-bold text-gray-400 bg-gray-200 dark:bg-gray-700 rounded border border-gray-300 dark:border-gray-600">⌘K</kbd>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex items-center gap-3 sm:gap-6">
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="category.html">
+                                Shop
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="sell_old.html">
+                                Sell
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                            <a class="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200 relative group"
+                                href="refurbished.html">
+                                Refurbished
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                            </a>
+                        </nav>
+                        <div class="h-6 w-px bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
+                        <div class="flex items-center gap-3">
+                            <button
+                                class="hidden sm:flex h-10 px-6 items-center justify-center rounded-full bg-slate-900 dark:bg-white dark:text-slate-900 text-white text-sm font-bold hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-slate-900/20 dark:shadow-white/10">
+                                Log In
+                            </button>
+                            <button
+                                class="relative p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-slate-700 dark:text-slate-200 group">
+                                <span
+                                    class="material-symbols-outlined filled-icon group-hover:text-primary transition-colors">shopping_bag</span>
+                                <span
+                                    class="absolute top-1 right-0.5 w-4 h-4 bg-primary text-white text-[10px] font-bold flex items-center justify-center rounded-full ring-2 ring-white dark:ring-background-dark">2</span>
+                            </button>
+                            <button
+                                class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-slate-700 dark:text-slate-200 md:hidden">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-10 py-8 md:py-12">
+            <!-- Page Heading -->
+            <div class="flex flex-col gap-3 mb-10 md:mb-14">
+                <h1 class="text-[#111418] text-4xl md:text-5xl font-bold tracking-tight">Shop by Category</h1>
+                <p class="text-[#617289] text-lg md:text-xl font-normal max-w-2xl">
+                    Premium technology tailored for professionals. Explore our curated selection of high-performance
+                    devices.
+                </p>
+            </div>
+            <!-- Category Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Card 1: Laptops -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <!-- Badge -->
+                    <div
+                        class="absolute top-4 left-4 bg-primary/10 backdrop-blur-sm px-3 py-1 rounded-full border border-primary/10 z-10">
+                        <span class="text-primary text-xs font-bold uppercase tracking-wider">Best Seller</span>
+                    </div>
+                    <!-- Image Container -->
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative z-0">
+                        <!-- Abstract gradient/circle behind image for depth -->
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Sleek silver laptop open displaying a colorful screen"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArfgxSO3-9ypfGm4-drKFVpod8e9kZZeOgvGofAELRnOjxrsafCi5M4kwrNn-Su-ljuyXG5wzFO-j31-qz15s6VGEX6p7wueXnLAsVGPq4e3UXvEsr6WYQj2Il7DE5mvN1HC5ofGgt7Ks9W2grn3q0d8Fq_PE25K4fTr_slLUYQCDzL_q9KGrUgfJTMWVAoDA7nsTdrnKDMDjTYpkPguL0-cNT336pksUFsyk0gCwCXj7LAUnDGrW_dd9YEsxn9L2mMVVg71YVx3E');">
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Laptops</h3>
+                        <p class="text-[#617289] text-sm mb-4">MacBook, XPS, ThinkPad</p>
+                        <!-- Hover Action -->
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 2: Monitors -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <!-- Badge -->
+                    <div
+                        class="absolute top-4 left-4 bg-orange-50 backdrop-blur-sm px-3 py-1 rounded-full border border-orange-100 z-10">
+                        <span class="text-orange-600 text-xs font-bold uppercase tracking-wider">New Arrival</span>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Modern 4k desktop monitor on a clean desk"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6LAKZIFpYpj3QvIQJCzsZcE5XJ7sRW931DMWy8U7GCE6RE7DW2ijRhoTc1qUePEdVuTu-B-5FZnX36ZyWFfsxvuIZpmvhU1z_9-tPnXiUbdDX0u5o_t8fboHDHFgzaz17BFrAyG04kMadG54xRGgaHCBFcO129UXoQt6e_VTpwwBmoff1-SPdJDXdbGobP7Xr6gWjFQap_iNN7JX4AKNp1i1oqKgCS5vvL0Qbz1OTx9jgery_eOVd1kFuFtmjhi8P6WIICW92NoU');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Monitors</h3>
+                        <p class="text-[#617289] text-sm mb-4">4K, Ultrawide, Gaming</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 3: Desktops -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="High performance desktop computer tower case"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWg3eBTf2EaMnn8JJ6gCI8CKSKuHzr19r2GAcvVMU6ct98NI954UiJeJj1QNMxH1Fiy3yZcD0ZQ6WQDicw1b2_Pxva9O7A0B7_GjQaN_7VrhITLVsExSH9_y6sEmikGbbT6LpXrL7BpuS7lmEVzz0Diff6Ac5_tA7TohZFLX2xHJz1TqJP3Kr1QQY4WCezHitFwBfDPhnCoK_n6Ucy0Amxq2A3VLQAZWjDdVh96kCOXxGP4by9njY7yVh3hWs367-zqb5yEEq_2kI');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Desktops</h3>
+                        <p class="text-[#617289] text-sm mb-4">Workstations &amp; Gaming</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 4: Keyboards & Mice -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Mechanical keyboard with rgb lighting"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5o48NvGnablEAAJ5_ZY4Vqky0ealLFINtCLfyaH6PzZnDXPYWPQM4-wYJzUX-Fc-XlONcM7jFSr16TPOHd-zIbduKeC6iYkbzUf0Q0vuexoZAT1IRTXlfKIIDbxkpQY-2fObKqn6uou9lLmqQcL2pIGulZxXxl9nlCjRGfBZZY3dRlLA0uFuikAXLwODcIf_z8rugfpWXZqlsJEGRRDqgaw-sWK6HPZ4PwgQEUDo5U09-8jCcIw08hV9R_VYz-AC_hSr8Z4ltpns');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Peripherals</h3>
+                        <p class="text-[#617289] text-sm mb-4">Keyboards, Mice, Pads</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 5: Audio -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="High quality over-ear wireless headphones"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKd8RFDi5tTFSjBg-mAnBYMB-t3II7YX8jMHG_AsgYOZlvzxtWkWdrYLzd6mpR729xRcE2mTUjRsceHaSKozaDM3AQEqpKghiN86Y9LVhyWU9Ti3hlTJDkKRzDm1UVXphM3aLqmvTauWCepbw3PupU8ebmTZo9wNXzo0yFB47cQMqx1UTQiFYXHijFf0L2md0m2mMM7dJFOsA4MTM6HEXIu61li8psKjPztT1VjKT76i2Be193cE0mE1WSsfsOIYj-HvUS2C2Ugt8');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Audio</h3>
+                        <p class="text-[#617289] text-sm mb-4">Headphones &amp; Speakers</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 6: Networking -->
+                <a class="group relative flex flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Modern wifi router with antennas"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoEqbcZ3uppmeC1p_mQI0r9t0zAFDRytH1TyZDjTeAvUGEebk57C9PoPgqsSGm_EwOiFYMY0Rd9GfOXUFq1XgwqSt4bOEgsHxyFEZTJqtMz4nbZ_AC4vjNO8MSGCEdrx-7hVt-oBbPoUa0wsCDtbKJjF2Ukr5jxl9JdFk65eWObV8yOrKeQ1_nVQ0A5BrRvZulyNGHGoCT5cn6kPdVNCqq7iITRx3cBKlcop7TeqiQ725OheeJicFisYg5EV3Ya3FxA0c5Cn-vEIY');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Networking</h3>
+                        <p class="text-[#617289] text-sm mb-4">Routers, Switches, NAS</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 7: Printers (Optional filler) -->
+                <a class="hidden xl:flex group relative flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Office laser printer machine"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEu9eVLaqXM6z2V7NIRJ1Dj1d18h5JWwYsRO1_V56ZZU0SoiLuzedAEuMUMsWEvaTzwF9ngI3wAZAHDmWisx9qpGEN7ibQdHfIX1gzRoiwgJtpBzjwjJgYkI0MuD7iuSTSg9LFdXPiSMxCgr8ZTWe05_-ad2eCKww0-5SMwHuq9Lx5G3om3jVhTqeQv2yBKnlIHqXiXlH0QwyMmNYeDv5oxTL2R6AZzETfIpKGjXr3PnyeQhQypNnh_JQHIoQdtNVlc_RXVet-Ulk');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Printers</h3>
+                        <p class="text-[#617289] text-sm mb-4">Laser &amp; Inkjet</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 8: Accessories (Optional filler) -->
+                <a class="hidden xl:flex group relative flex-col items-center p-8 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer h-[320px]"
+                    href="product_details.html">
+                    <div class="flex-1 flex items-center justify-center w-full mb-4 relative">
+                        <div
+                            class="absolute w-32 h-32 bg-gradient-to-tr from-gray-100 to-gray-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150">
+                        </div>
+                        <div class="w-full h-40 bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            data-alt="Various computer cables and adapters"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFzv9Ver8D-FjMvqGuVg1hQ1UD0FqgQqxaWmhh0FKhVn5dWHt2MZN_jDxEcXfqr_jWx0VrP3gp_yh-54dRrr81CshxI9sv9MBjur-TV8Tl54SQQgpNGoFjzudACi0y2zGyCjAdYPBGRvqxdPqzE6Wq3iP1bZCeb2etRLXQ71zv_-FRAB3K2pWf0-XQQPun5AloWs1mPSOzuJ8HykEW0m9AFuXGOXxQXUTkeElI85NZnYq99PoTCdMcAd_VnsrRoy1N7NgTuiP4aoE');">
+                        </div>
+                    </div>
+                    <div class="text-center w-full relative z-10">
+                        <h3 class="text-[#111418] text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                            Accessories</h3>
+                        <p class="text-[#617289] text-sm mb-4">Cables, Stands, Bags</p>
+                        <div
+                            class="flex items-center justify-center gap-1 text-primary opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span class="text-sm font-bold">View Products</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Trust Section -->
+            <div class="mt-20 border-t border-slate-200 pt-10">
+                <h2 class="text-[#111418] text-2xl font-bold mb-8 text-center">Why Choose Surya Infotech</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Trust Item 1 -->
+                    <div class="flex flex-col items-center text-center p-6 rounded-xl bg-white border border-slate-100">
+                        <div class="mb-4 p-3 bg-blue-50 text-primary rounded-full">
+                            <span class="material-symbols-outlined text-3xl">verified_user</span>
+                        </div>
+                        <h3 class="text-[#111418] text-lg font-bold mb-2">Certified Quality</h3>
+                        <p class="text-[#617289] text-sm">Every product undergoes rigorous testing to ensure premium
+                            performance.</p>
+                    </div>
+                    <!-- Trust Item 2 -->
+                    <div class="flex flex-col items-center text-center p-6 rounded-xl bg-white border border-slate-100">
+                        <div class="mb-4 p-3 bg-blue-50 text-primary rounded-full">
+                            <span class="material-symbols-outlined text-3xl">shield</span>
+                        </div>
+                        <h3 class="text-[#111418] text-lg font-bold mb-2">Warranty Support</h3>
+                        <p class="text-[#617289] text-sm">Comprehensive warranty plans included with every authorized
+                            purchase.</p>
+                    </div>
+                    <!-- Trust Item 3 -->
+                    <div class="flex flex-col items-center text-center p-6 rounded-xl bg-white border border-slate-100">
+                        <div class="mb-4 p-3 bg-blue-50 text-primary rounded-full">
+                            <span class="material-symbols-outlined text-3xl">lock</span>
+                        </div>
+                        <h3 class="text-[#111418] text-lg font-bold mb-2">Secure Payments</h3>
+                        <p class="text-[#617289] text-sm">Your transactions are protected by industry-leading end-to-end
+                            encryption.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-[#0b1118] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-lg shadow-sm">
+                                <span class="material-symbols-outlined text-white text-xl font-bold">diamond</span>
+                            </div>
+                            <h2 class="text-slate-900 dark:text-white text-lg font-bold tracking-tight">Surya Infotech
+                            </h2>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Your premium destination for high-end computing. Buy, sell, or trade up to the best
+                            technology on the market.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">call</span></a>
+                            <a class="w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-400 hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                                href="#"><span class="material-symbols-outlined text-lg">pin_drop</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-6">Shop</h3>
+                        <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="#">Laptops</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Desktops</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Monitors</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Components</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-6">Support</h3>
+                        <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="#">Order Status</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Warranty</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Trade-in Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-2xl">
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">Join the Club</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get <span
+                                class="font-bold text-primary">₹500 OFF</span> your first order.</p>
+                        <form class="flex flex-col gap-3">
+                            <input
+                                class="w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm focus:ring-primary focus:border-primary p-2.5"
+                                placeholder="Enter your email" type="email" />
+                            <button
+                                class="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg px-4 py-2.5 text-sm font-bold hover:bg-primary dark:hover:bg-gray-200 transition-colors">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>© 2025 Surya Infotech. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Privacy Policy</a>
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

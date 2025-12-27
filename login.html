@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Surya Infotech - Login</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "primary-hover": "#0f5bbd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                        "accent-gold": "#C5A059", // Adding a custom gold for the brand
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02), 0 10px 15px -3px rgba(0, 0, 0, 0.04)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white transition-colors duration-200">
+    <div class="flex min-h-screen w-full flex-col lg:flex-row">
+        <!-- Left Side: Login Form -->
+        <div
+            class="flex w-full flex-col justify-center px-6 py-12 lg:w-1/2 lg:px-20 xl:px-32 bg-white dark:bg-[#111a25]">
+            <!-- Header / Logo -->
+            <div class="flex items-center gap-3 mb-10">
+                <div class="flex size-10 items-center justify-center rounded-xl bg-accent-gold/10 text-accent-gold">
+                    <span class="material-symbols-outlined text-3xl">laptop_mac</span>
+                </div>
+                <h2 class="text-2xl font-bold tracking-tight text-[#111418] dark:text-white">Surya Infotech</h2>
+            </div>
+            <!-- Page Heading -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-black leading-tight tracking-tight text-[#111418] dark:text-white mb-2">Welcome
+                    Back</h1>
+                <p class="text-[#617289] dark:text-gray-400 text-base font-normal">
+                    Enter your details to access your premium tech dashboard.
+                </p>
+            </div>
+            <!-- Login Form -->
+            <form class="space-y-6">
+                <!-- Email Field -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium leading-6 text-[#111418] dark:text-gray-200"
+                        for="email">Email or Username</label>
+                    <div class="relative mt-2 rounded-lg shadow-sm">
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <span class="material-symbols-outlined text-[#617289]" style="font-size: 20px;">mail</span>
+                        </div>
+                        <input
+                            class="block w-full rounded-lg border-0 py-3.5 pl-10 text-[#111418] ring-1 ring-inset ring-[#dbe0e6] placeholder:text-[#617289] focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-background-dark dark:ring-gray-700 dark:text-white sm:text-sm sm:leading-6"
+                            id="email" name="email" placeholder="name@example.com" type="email" />
+                    </div>
+                </div>
+                <!-- Password Field -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <label class="block text-sm font-medium leading-6 text-[#111418] dark:text-gray-200"
+                            for="password">Password</label>
+                        <div class="text-sm">
+                            <a class="font-medium text-primary hover:text-primary-hover" href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <div class="relative mt-2 rounded-lg shadow-sm">
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <span class="material-symbols-outlined text-[#617289]" style="font-size: 20px;">lock</span>
+                        </div>
+                        <input
+                            class="block w-full rounded-lg border-0 py-3.5 pl-10 pr-10 text-[#111418] ring-1 ring-inset ring-[#dbe0e6] placeholder:text-[#617289] focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-background-dark dark:ring-gray-700 dark:text-white sm:text-sm sm:leading-6"
+                            id="password" name="password" placeholder="••••••••" type="password" />
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+                            <span class="material-symbols-outlined text-[#617289] hover:text-[#111418]"
+                                style="font-size: 20px;">visibility_off</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Actions -->
+                <div class="pt-2">
+                    <button
+                        class="flex w-full justify-center rounded-lg bg-primary px-3 py-3.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-200"
+                        type="button">
+                        Sign in
+                    </button>
+                </div>
+                <!-- Social Login Divider -->
+                <div class="relative mt-6">
+                    <div aria-hidden="true" class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-200 dark:border-gray-700"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm font-medium leading-6">
+                        <span class="bg-white dark:bg-[#111a25] px-6 text-[#617289] dark:text-gray-400">Or continue
+                            with</span>
+                    </div>
+                </div>
+                <!-- Social Buttons -->
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                    <button
+                        class="flex w-full items-center justify-center gap-3 rounded-lg bg-white dark:bg-gray-800 px-3 py-2.5 text-sm font-semibold text-[#111418] dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-offset-0 transition-colors"
+                        type="button">
+                        <svg aria-hidden="true" class="h-5 w-5" viewbox="0 0 24 24">
+                            <path
+                                d="M12.0003 20.45c4.6667 0 8.45-3.7833 8.45-8.45 0-4.6667-3.7833-8.45-8.45-8.45-4.6667 0-8.45 3.7833-8.45 8.45 0 4.6667 3.7833 8.45 8.45 8.45Z"
+                                fill="#fff" fill-opacity="0" stroke="currentColor" stroke-width="0"></path>
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4"></path>
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853"></path>
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05"></path>
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335"></path>
+                        </svg>
+                        <span class="text-sm">Google</span>
+                    </button>
+                    <button
+                        class="flex w-full items-center justify-center gap-3 rounded-lg bg-white dark:bg-gray-800 px-3 py-2.5 text-sm font-semibold text-[#111418] dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-offset-0 transition-colors"
+                        type="button">
+                        <svg aria-hidden="true" class="h-5 w-5 text-[#111418] dark:text-white" fill="currentColor"
+                            viewbox="0 0 24 24">
+                            <path
+                                d="M13.601 2.326A4.499 4.499 0 0017.504 0a4.496 4.496 0 00-4.46 4.338 4.499 4.499 0 00.557-2.012zm5.833 4.288a6.669 6.669 0 00-3.747 1.564c-.834.71-1.488 1.62-1.956 2.596-.025.055-.052.111-.077.169-.083.19-.16.39-.226.596-.134.42-.24.854-.319 1.288-.006.035-.01.07-.014.106-.11.666-.145 1.345-.107 2.024.037.674.14 1.332.308 1.97.166.626.397 1.233.684 1.815.485.98 1.139 1.889 1.956 2.597.683.593 1.442 1.077 2.261 1.447.818.37 1.696.596 2.596.67 1.08.087 2.16-.062 3.165-.436 1.004-.374 1.916-.957 2.684-1.722a.5.5 0 00-.707-.707c-.672.671-1.47 1.182-2.35 1.509-.88.328-1.826.458-2.772.381-.79-.064-1.56-.263-2.278-.588-.718-.325-1.383-.75-1.982-1.27-.716-.62-1.29-1.417-1.714-2.277-.25-.51-.453-1.042-.598-1.591a7.485 7.485 0 01-.27-1.728c-.033-.595-.003-1.19.094-1.774.004-.03.007-.06.012-.09.07-.38.163-.76.28-1.128.058-.18.125-.356.198-.523.022-.05.045-.1.067-.148.41-.855.984-1.652 1.714-2.272.716-.607 1.543-.997 2.417-1.144.873-.147 1.77-.044 2.613.3.843.344 1.604.912 2.222 1.658a.5.5 0 00.77-.638 6.645 6.645 0 00-2.535-1.892 6.669 6.669 0 00-2.979-.344z">
+                            </path>
+                        </svg>
+                        <span class="text-sm">Apple</span>
+                    </button>
+                </div>
+            </form>
+            <p class="mt-10 text-center text-sm text-[#617289] dark:text-gray-400">
+                New to Surya Infotech?
+                <a class="font-semibold leading-6 text-primary hover:text-primary-hover" href="register.html">Create an account</a>
+            </p>
+            <div class="mt-10 flex gap-4 justify-center text-xs text-[#617289]">
+                <a class="hover:text-[#111418] dark:hover:text-white" href="#">Privacy Policy</a>
+                <span>•</span>
+                <a class="hover:text-[#111418] dark:hover:text-white" href="#">Terms of Service</a>
+            </div>
+        </div>
+        <!-- Right Side: Image/Branding -->
+        <div class="relative hidden w-0 flex-1 lg:block bg-background-light dark:bg-background-dark">
+            <div class="absolute inset-0 h-full w-full object-cover">
+                <img alt="Premium sleek laptop workspace setup with dark modern aesthetic"
+                    class="h-full w-full object-cover"
+                    data-alt="Premium sleek laptop workspace setup with dark modern aesthetic"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuABAZOXCpu1jnF45hm2Vcj1crqfYIVkry9dWsaw1HbRGbxtsIKJXAd9NFr6Jjp8xFSmv7ltP3N658FxFbRbr3gzitqEkgBP9GDOHgfMBh8EkDbQsufGyiW7tivVQh3Y3nEma2D5rD_6lWMQlaYnUuex6X0h9__R4E18GypCV5225n7QMfOQnMF9BpTbPrIpRSToejo3RCZQwbeBrU5PZL9z62SQyIifLECN-svFAcw82r0xuwbmXvMiFIwTR0KyWHAA5IRvNtdLG9g" />
+                <!-- Gradient Overlay for better text readability if we had text, but also for style -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent mix-blend-multiply"></div>
+                <!-- Floating Info Card (Optional Polish) -->
+                <div
+                    class="absolute bottom-10 left-10 right-10 backdrop-blur-md bg-white/10 border border-white/20 p-6 rounded-2xl text-white shadow-2xl">
+                    <div class="flex gap-4 items-center">
+                        <div class="h-12 w-12 rounded-lg bg-accent-gold flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-white" style="font-size: 28px;">verified</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg leading-tight">Premium Quality Guarantee</p>
+                            <p class="text-white/80 text-sm mt-1">Shop the latest authentic laptops and accessories with
+                                confidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
